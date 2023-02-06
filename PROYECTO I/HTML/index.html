@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Formularios</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="../CSS/stylesheet.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <script src="../JS/forms.js"></script>
+        <div class="titulo">
+            <h1>Bienvenido, vamos a empezar con la creación de formularios</h1>
+        </div>
+        <div class="bienvenida">
+            <h2>Inicio de sesion</h2>
+        </div>
+        <div>
+            <form class="formulario" method="get" name="formulario" 
+            onsubmit="return validar(this)">
+                <label>Nombre</label>
+                <br>
+                <input class="in_nombre" type="text" name="nombre" placeholder="Nombre..." required>
+                <br>
+                <label>Apellido paterno</label>
+                <br>
+                <input class="in_appat" type="text" name="appat" placeholder="Apellido Paterno..." required>
+                <br>
+                <label>Apellido materno</label>
+                <br>
+                <input class="in_apmat" type="text" name="apmat" placeholder="Apellido Materno..." required>
+                <br>
+                <label>Edad</label>
+                <select class="sel_edad" name="edad" id="edad" required>
+                    <option name="edad" value="18">18</option>
+                    <option name="edad" value="18">19</option>
+                    <option name="edad" value="20">20</option>
+                    <option name="edad" value="21">21</option>
+                    <option name="edad" value="22">22</option>
+                    <option name="edad" value="23">23</option>
+                    <option name="edad" value="24">24</option>
+                    <option name="edad" value="25">25</option>
+                    <option name="edad" value="26">26</option>
+                    <option name="edad" value="27">27</option>
+                    <option name="edad" value="28">28</option>
+                    <option name="edad" value="29">29</option>
+                    <option name="edad" value="30">30</option>
+                </select>
+                <label>Género</label>
+                <select class="sel_genero" name="genero" id="genero">
+                    <option name="genero" value="h">Hombre</option>
+                    <option name="genero" value="m">Mujer</option>
+                    <option name="genero" value="pnr">Prefiero no responder</option>
+                </select>
+                <br>
+                <label>Correo electrónico</label>
+                <br>
+                <input class="in_email" type="email" name="email" placeholder="estoes@unejemplo.com" required>
+                <br>
+                <label>Contraseña</label>
+                <br>
+                <input class="in_pass" type="password" name="password" placeholder="Password..." required>
+                <br>
+                <input id="boton" class="in_enviar" type="submit" name="enviar" value="Enviar">
+            </form>
+        </div>
+    </body>
+</html>

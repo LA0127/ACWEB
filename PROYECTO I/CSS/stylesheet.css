@@ -1,0 +1,33 @@
+/*
+titulo
+bienvenida
+formulario
+in_nombre
+in_appat
+in_apmat
+sel_genero
+in_email
+in_pass
+in_enviar
+*/
+body{
+    border: 40px solid grey;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+input, label{
+    font-size: 1.2em;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#boton{
+    margin: 15px;
+    background-color: grey;
+    color: white;
+    font-size: 1.3em;
+    border-radius: 15px;
+}
+.sel_genero, .sel_edad{
+    font-size: 1em;
+    margin: 15px;
+}
