@@ -6,7 +6,7 @@
 }
 .problema-content{
     width: 100%;
-    background-color: rgba(72, 244, 187, 0.03);
+    background-color: rgba(244, 72, 95, 0.03);
     color: rgb(8, 130, 236);
     text-align: center;
     height: 200px;
@@ -17,9 +17,9 @@
 }
 @keyframes animacion_test{
     from{
-        background-color: rgba(72, 244, 78, 0.03);
+        background-color: rgba(218, 72, 244, 0.03);
     }
     to{
-        background-color: rgba(244, 161, 72, 0.03);
+        background-color: rgba(72, 244, 104, 0.03);
     }
 }
