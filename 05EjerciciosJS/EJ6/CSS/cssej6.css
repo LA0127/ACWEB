@@ -1,0 +1,48 @@
+* {
+    padding: 0%;
+    font-family: 'Montserrat', sans-serif; 
+    /*
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    */
+    text-align: center;
+}
+.Titulo{
+    text-align: center;
+}
+
+body {
+    background-color: lightblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+input[type="date"] {
+    font-size: 1.2em;
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+  
+  button {
+    font-size: 1.2em;
+    padding: 10px 20px;
+    background-color: lightgreen;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+  
+  button:hover {
+    background-color: green;
+    color: white;
+  }
+  
+  #output {
+    font-size: 1.2em;
+    margin-top: 20px;
+  }

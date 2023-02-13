@@ -1,0 +1,43 @@
+* {
+    padding: 0%;
+    font-family: 'Montserrat', sans-serif; 
+    /*
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    */
+    text-align: center;
+    background-color: lightblue;
+}
+.Titulo{
+    text-align: center;
+}
+button {
+    background-color: rgba(255, 255, 0, 0.593);
+    border: 1px solid gray;
+    padding: 10px 20px;
+    border-radius: 5px;
+    animation: wildAnimation 4s infinite alternate;
+  }
+  
+  @keyframes wildAnimation {
+    0% {
+      transform: rotate(0deg) skew(0deg) scale(1);
+    }
+    20% {
+      transform: rotate(360deg) skew(20deg) scale(1.5);
+    }
+    40% {
+      transform: rotate(-360deg) skew(-20deg) scale(0.5);
+    }
+    60% {
+      transform: rotate(360deg) skew(20deg) scale(1.5);
+    }
+    80% {
+      transform: rotate(-360deg) skew(-20deg) scale(0.5);
+    }
+    100% {
+      transform: rotate(0deg) skew(0deg) scale(1);
+    }
+  }
+  

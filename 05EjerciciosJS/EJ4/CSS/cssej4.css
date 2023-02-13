@@ -1,0 +1,29 @@
+* {
+    padding: 0%;
+    font-family: 'Montserrat', sans-serif; 
+    /*
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    */
+    text-align: center;
+    background-color: #0505e954;
+}
+.Titulo{
+    text-align: center;
+}
+
+label {
+    display: inline-block;
+    width: 120px;
+    text-align: right;
+    margin-right: 10px;
+  }
+  
+  input[type="text"] {
+    width: 50px;
+  }
+  
+  button {
+    margin-left: 130px;
+  }

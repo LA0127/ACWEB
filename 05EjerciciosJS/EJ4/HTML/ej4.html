@@ -4,7 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="../CSS/cssej4.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <title>Ejercicio 4</title>
 </head>
 <body>
     <div class="Titulo">
@@ -22,6 +26,33 @@
         </ul>
         </h3>
     </div>
-
+    <div>
+            <h1>Cálculo de Calificación Final</h1>
+        <p>
+        <label for="nota1">Nota 1:</label>
+        <input type="text" id="nota1">
+        </p>
+        <p>
+        <label for="nota2">Nota 2:</label>
+        <input type="text" id="nota2">
+        </p>
+        <p>
+        <label for="nota3">Nota 3:</label>
+        <input type="text" id="nota3">
+        </p>
+        <p>
+        <label for="examen">Examen Final:</label>
+        <input type="text" id="examen">
+        </p>
+        <p>
+        <label for="trabajo">Trabajo Final:</label>
+        <input type="text" id="trabajo">
+        </p>
+        <p>
+        <button onclick="calcular()">Calcular</button>
+        </p>
+        <p id="resultado"></p>
+    </div>
+    <script src="../JS/ej4.js"></script>
 </body>
 </html>
