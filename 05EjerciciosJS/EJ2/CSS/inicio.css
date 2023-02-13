@@ -7,3 +7,24 @@
     text-align: center;
 }
 
+input[type="text"] {
+  padding: 8px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid gray;
+  width: 200px;
+  margin-bottom: 10px;
+}
+button {
+  padding: 8px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  background-color: lightgray;
+  border: 1px solid gray;
+  margin-right: 10px;
+  cursor: pointer;
+}
+#resultado {
+  margin-top: 20px;
+  font-size: 16px;
+}
