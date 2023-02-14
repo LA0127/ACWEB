@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/cssej10.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
@@ -14,14 +18,18 @@
             Ejercicio 10
         </h1>
         <h3>
-            calcular la utilidad que un treabajador recibe en el reparto anual de utilidades si este se le asigna como un porcentaje de su salario mensual que depende de su antiguedad en sui empresa de acuerdo con su la siguiente tabla
+            Calcular la utilidad que un treabajador recibe en el reparto anual de utilidades si este se le asigna como un porcentaje de su salario mensual que depende de su antiguedad en sui empresa de acuerdo con su la siguiente tabla
         </h3>
     </div>
     <div>
-        <table>
-            
-        </table>        
+        <form>
+            <label for="salary">Salario Mensual:</label>
+            <input type="text" id="salary" name="salary"><br><br>
+            <label for="seniority">Antigüedad en la Empresa (en años):</label>
+            <input type="text" id="seniority" name="seniority"><br><br>
+            <button type="button" onclick="calculate()">Calcular</button>
+          </form>
     </div>
-
+    <script src="../JS/ej10.js"></script>
 </body>
 </html>
