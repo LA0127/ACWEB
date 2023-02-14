@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
-    <title>Document</title>
+    <title>Ejercicio 10</title>
 </head>
 <body>
     <div class="Titulo">
@@ -23,12 +23,15 @@
     </div>
     <div>
         <form>
-            <label for="salary">Salario Mensual:</label>
-            <input type="text" id="salary" name="salary"><br><br>
-            <label for="seniority">Antigüedad en la Empresa (en años):</label>
-            <input type="text" id="seniority" name="seniority"><br><br>
-            <button type="button" onclick="calculate()">Calcular</button>
+            <label>Antigüedad en la empresa (en años):</label>
+            <input type="number" id="antiguedad"><br><br>
+            <label>Salario mensual:</label>
+            <input type="number" id="salario"><br><br>
+            <button type="button" onclick="calcularUtilidad()">Calcular Utilidad</button>
           </form>
+          <br><br>
+          <h3>Resultado:</h3>
+          <p id="resultado"></p>
     </div>
     <script src="../JS/ej10.js"></script>
 </body>
