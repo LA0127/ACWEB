@@ -3,69 +3,49 @@
   font-family: 'Montserrat', sans-serif;
   text-align: center;
 }
-input {
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  background-color: #229fd9;
+  position: relative;
+}
+nav ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
+nav ul li a {
+  display: block;
+  color: #000;
+  text-decoration: none;
+  padding: 10px 20px;
+}
+nav ul li:hover {
   background-color: #e6e6e6;
-  border: 1px solid #e6e6e6;
-  padding: 10px;
-  font-size: 16px;
-  border-radius: 4px;
-  margin: 10px;
 }
-body{
-  background-color: #EFEDF9;
+nav ul li:hover > ul {
+  display: block;
 }
-body::before {
-  content: "";
-  position: fixed;
-  top: 8.5%;
-  left: 0;
-  transform: translateY(-50%);
+nav ul ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  background-color: #bedeff;
+  padding: 0;
+  margin: 0;
+  border-top: 5px solid #fff;
+  min-width: 150px;
+}
+nav ul ul li {
+  display: block;
   width: 100%;
-  height: 8.5px;
-  background-color: #000000;
-  z-index: -1;
 }
-h1{
-  text-align: center;
-  padding: 5px;
-  border-radius: 10px;
-  display: inline-block;
-  background-color: #229fd9;
-  transform: matrix(0.75);
+nav ul ul li a {
+  display: block;
+  padding: 10px 20px;
+  color: #000;
+  text-decoration: none;
 }
-.menu{
-  text-align: center;
-  padding: 5px;
-  border-radius: 10px;
-  display: inline-block;
-  background-color: #e6e6e6;
-}
-button {
-  background-color: #e6e6e6;
-  border-radius: 100px;
-  padding: 15px 32px;
-  text-align: center;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
-  transition: all 0.3s ease-in-out;
-  border: none;
-}
-button:hover {
-  background-color: #229fd9;
-  transform: scale(1.1);
-}
-.flex-padre{
-  width: auto;
-  height: auto;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: start;
-  flex-wrap: wrap;
-  margin-left: -150px;
-}
-.flex-hijo{
-
+nav ul ul li:hover {
+  background-color: #777;
 }
