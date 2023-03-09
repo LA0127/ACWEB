@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+body{
+    background: #9CECFB;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #0052D4, #65C7F7, #9CECFB);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #0052D4, #65C7F7, #9CECFB); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+}
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+.btn.dropdown-toggle {
+    width: 150px;
+    text-align: left;
+}
+
+span.caret {
+    position: absolute;
+    left: 90%;
+    top: 45%;
+}
+
+option {
+    border-radius: 100px;
+}
+
+label {
+    padding-top: 5px;
+}
+
+.form-label {
+    padding-left: 0px !important;
+}
+
+img {
+    max-width: 400px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+}
+
+img:hover {
+    transform: scale(2.5);
+    z-index: 1;
+}
+
+.form-control {
+    border-radius: 100px;
+}
+
+.btn-success {
+    background-color: #3b7d4a !important;
+    border-radius: 100px;
+    border: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-success:hover {
+    background-color: #4daf64 !important;
+}
+
+.list-group-item {
+    padding: 1.25rem 1.25rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.list-group-item:hover {
+    background-color: rgba(0, 0, 0, 0.03);
+}
+
+img.track {
+    border: 1px solid #8a8a8a;
+    transition: all 0.3s ease-in-out;
+}
+
+img.track:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
+}
+
+.logo {
+    position: fixed;
+    top: 0;
+    right: 0;
+    margin: 10px;
+    width: 20px;
+    height: 20px;
+}
+.esquina-img {
+    position: absolute;
+    top: 20px;
+    right: 200px;
+    width: 150px;
+    height: 150px;
+}
+.esquina-img {
+    transform: none !important;
+}
