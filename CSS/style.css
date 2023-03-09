@@ -10,78 +10,46 @@ body{
   background: linear-gradient(to left, #E684AE, #79CBCA, #77A1D3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 a {
-  font-size: 18px;
-  color: #333;
-  text-decoration: none;
-  display: inline-block;
-  margin: 10px 0;
-  position: relative;
+  color: #000; /* color de texto predeterminado */
+  text-decoration: none; /* eliminar subrayado predeterminado */
+  position: relative; /* agregar posicionamiento relativo */
 }
 
 a:hover {
-  color: #fff;
+  color: #ff69b4; /* cambiar color de texto al pasar el cursor */
 }
 
-/* Animación para el enlace de Práctica 1 */
-a:nth-of-type(1) {
-  animation: slideInLeft 0.5s ease forwards;
+a::before {
+  content: ''; /* agregar contenido antes del enlace */
+  position: absolute; /* agregar posicionamiento absoluto */
+  width: 100%; /* ancho del enlace */
+  height: 2px; /* altura de la línea */
+  bottom: 0; /* alinear en la parte inferior */
+  left: 0; /* alinear a la izquierda */
+  background-color: #ff69b4; /* color de la línea */
+  visibility: hidden; /* ocultar la línea por defecto */
+  transform: scaleX(0); /* escalar la línea horizontalmente a 0 */
+  transition: all 0.3s ease-in-out; /* transición suave */
 }
 
-/* Animación para el enlace de Práctica 2 LOGIN */
-a:nth-of-type(2) {
-  animation: slideInRight 0.5s ease forwards;
+a:hover::before {
+  visibility: visible; /* mostrar la línea al pasar el cursor */
+  transform: scaleX(1); /* escalar la línea horizontalmente a 1 */
 }
 
-/* Animación para el enlace de Práctica 3 */
-a:nth-of-type(3) {
-  animation: slideInLeft 0.5s ease forwards;
+a::after {
+  content: ''; /* agregar contenido después del enlace */
+  position: absolute; /* agregar posicionamiento absoluto */
+  width: 10px; /* ancho del icono */
+  height: 10px; /* altura del icono */
+  background-color: #ff69b4; /* color del icono */
+  border-radius: 50%; /* agregar bordes redondeados */
+  opacity: 0; /* ocultar el icono por defecto */
+  transform: translate(-50%, -50%) scale(0); /* mover y escalar el icono */
+  transition: all 0.3s ease-in-out; /* transición suave */
 }
 
-/* Animación para el enlace de Tarea Algoritmia con ejercicios 1-3 */
-a:nth-of-type(4) {
-  animation: slideInRight 0.5s ease forwards;
-}
-
-/* Animación para el enlace de la práctica de formulario */
-a:nth-of-type(5) {
-  animation: slideInLeft 0.5s ease forwards;
-}
-
-/* Animación para el enlace de la práctica de Ejercicios */
-a:nth-of-type(6) {
-  animation: slideInRight 0.5s ease forwards;
-}
-
-/* Animación para el enlace de la maquetación */
-a:nth-of-type(7) {
-  animation: slideInLeft 0.5s ease forwards;
-}
-
-/* Animación para el enlace de la API de SPOTIFY */
-a:nth-of-type(8) {
-  animation: slideInRight 0.5s ease forwards;
-}
-
-/* Definición de animación slideInLeft */
-@keyframes slideInLeft {
-  from {
-    transform: translateX(-50px);
-    opacity: 0;
-  }
-  to {
-    transform: translateX(0);
-    opacity: 1;
-  }
-}
-
-/* Definición de animación slideInRight */
-@keyframes slideInRight {
-  from {
-    transform: translateX(50px);
-    opacity: 0;
-  }
-  to {
-    transform: translateX(0);
-    opacity: 1;
-  }
+a:hover::after {
+  opacity: 1; /* mostrar el icono al pasar el cursor */
+  transform: translate(-50%, -50%) scale(1); /* mover y escalar el icono */
 }
