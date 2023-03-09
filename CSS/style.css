@@ -38,18 +38,20 @@ a:hover::before {
 }
 
 a::after {
-  content: ''; /* agregar contenido después del enlace */
-  position: absolute; /* agregar posicionamiento absoluto */
-  width: 10px; /* ancho del icono */
-  height: 10px; /* altura del icono */
-  background-color: #ff69b4; /* color del icono */
-  border-radius: 50%; /* agregar bordes redondeados */
-  opacity: 0; /* ocultar el icono por defecto */
-  transform: translate(-50%, -50%) scale(0); /* mover y escalar el icono */
-  transition: all 0.3s ease-in-out; /* transición suave */
-}
-
-a:hover::after {
-  opacity: 1; /* mostrar el icono al pasar el cursor */
-  transform: translate(-50%, -50%) scale(1); /* mover y escalar el icono */
-}
+  content: '';
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: #ff69b4;
+  border-radius: 40%;
+  opacity: 0;
+  left: -10%;
+  top: 70%; /* Agregar top */
+  transform: translate(-50%, -50%) scale(0) translateY(-50%); /* Mover y centrar verticalmente */
+  transition: all 0.3s ease-in-out;
+  }
+  
+  a:hover::after {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(.5) translateY(-50%); /* Mover y centrar verticalmente */
+  }
